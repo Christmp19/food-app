@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="image/favicon.svg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFood</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-utensils"></i> food </a>
+
+    <nav class="navbar">
+        <a href="index.html">Accueil</a>
+        <a href="#about"> À Propos De</a>
+        <a href="#popular">Menu Populaire</a>
+        <a href="#menu">menu</a>
+        <a href="#order">Commander</a>
+        <a href="#blogs">des Blogs</a>
+        <a href="#" id="login-btn" class="user"><i class="fas fa-user"></i></a>
+        <a href="#" id="logout-btn" style="display: none;"><i class="fas fa-sign-out-alt"></i></a>
+        <a href="#" id="cart-btn" class="cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count" class="cart-notif">0</span>
+        </a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+</header>
+    <!-- header section ends  -->
+
+<div class="container">
+    <h2>Validation de Commande</h2>
+    <form id="checkout-form">
+        <div class="mb-3">
+            <label for="name" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="address" class="form-label">Adresse</label>
+            <input type="text" class="form-control" id="address" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <button type="submit" class="btn btn-success">Commander</button>
+    </form>
+</div>
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>our menu</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> pizza</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> burger</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> chicken</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> pasta</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> and more...</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"> <i class="fas fa-arrow-right"></i> home</a>
+                <a href="#about"> <i class="fas fa-arrow-right"></i> about</a>
+                <a href="#popular"> <i class="fas fa-arrow-right"></i> popular</a>
+                <a href="#menu"> <i class="fas fa-arrow-right"></i> menu</a>
+                <a href="#order"> <i class="fas fa-arrow-right"></i> order</a>
+                <a href="#blogs"> <i class="fas fa-arrow-right"></i> blogs</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> my order</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> my account</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> my favorite</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> terms of use</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> privary policy</a>
+            </div>
+
+            <div class="box">
+                <h3>opening hours</h3>
+                <p>monday : 7:00am to 10:00pm</p>
+                <p>tuesday : 7:00am to 10:00pm</p>
+                <p>wednesday : 7:00am to 10:00pm</p>
+                <p>friday : 7:00am to 10:00pm</p>
+                <p>saturday and sunday closed</p>
+            </div>
+
+        </div>
+
+        <div class="bottom">
+
+
+            <div class="credit">Copyright ©2024, all rights reserved!| created by <span>Christie MPASSI</span> </div>
+
+        </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

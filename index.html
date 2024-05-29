@@ -14,6 +14,8 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
 </head>
 
@@ -32,13 +34,16 @@
             <a href="#menu">menu</a>
             <a href="#order">Commander</a>
             <a href="#blogs">des Blogs</a>
+            <a href="#" id="login-btn" class="user"><i class="fas fa-user"></i></a>
+            <a href="#" id="logout-btn" style="display: none;"><i class="fas fa-sign-out-alt"></i></a>
+            <a href="#" id="cart-btn" class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count" class="cart-notif">0</span>
+            </a>
         </nav>
 
         <div class="icons">
             <div id="menu-btn" class="fas fa-bars"></div>
-            <div id="social" class="fab fa-facebook-f"></div>
-            <div id="social" class="fab fa-instagram"></div>
-            <div id="social" class="fab fa-twitter"></div>
         </div>
     </header>
 
@@ -55,7 +60,7 @@
             <h3>Différentes Épices Pour Les Différents Goûts 😋</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde dolores temporibus hic quam debitis
                 tenetur harum nemo.</p>
-            <a href="#" class="btn">Commander Maintenant</a>
+            <a href="#order" class="btn">Commander Maintenant</a>
         </div>
 
         <div class="image">
@@ -184,7 +189,6 @@
         </div>
 
         <div class="box-container">
-
             <div class="box">
                 <a href="#" class="fas fa-heart"></a>
                 <div class="image">
@@ -201,9 +205,13 @@
                         <span> (50) </span>
                     </div>
                     <div class="price">2000fr <span>2000frs</span></div>
-                    <a href="#" class="btn">add to cart</a>
+                    <div class="bouton-add">
+                        <input type="number" min="1" value="1" id="quantity-1" class="bg-red-600 p-2  quantity-input">
+                        <button onclick="addToCart('delicieux Burger', 2000, 1)">Ajouter au panier</button>
+                    </div>
                 </div>
             </div>
+
 
             <div class="box">
                 <a href="#" class="fas fa-heart"></a>
@@ -221,7 +229,10 @@
                         <span> (50) </span>
                     </div>
                     <div class="price">2000frs<span>2000frs</span></div>
-                    <a href="#" class="btn">add to cart</a>
+                    <div class="bouton-add">
+                        <input type="number" min="1" value="1" id="quantity-1" class="bg-red-600 p-2  quantity-input">
+                        <button onclick="addToCart('delicieuse pizza', 2000, 1)">Ajouter au panier</button>
+                    </div>
                 </div>
             </div>
 
@@ -241,7 +252,10 @@
                         <span> (50) </span>
                     </div>
                     <div class="price">2000frs <span>2000frs</span></div>
-                    <a href="#" class="btn">add to cart</a>
+                    <div class="bouton-add">
+                        <input type="number" min="1" value="1" id="quantity-1" class="bg-red-600 p-2  quantity-input">
+                        <button onclick="addToCart('delicieux Burger', 2000, 1)">Ajouter au panier</button>
+                    </div>
                 </div>
             </div>
 
@@ -261,7 +275,10 @@
                         <span> (50) </span>
                     </div>
                     <div class="price">2000frs<span>2000frs</span></div>
-                    <a href="#" class="btn">add to cart</a>
+                    <div class="bouton-add">
+                        <input type="number" min="1" value="1" id="quantity-1" class="bg-red-600 p-2  quantity-input">
+                        <button onclick="addToCart('delicieux Burger', 2000, 1)">Ajouter au panier</button>
+                    </div>
                 </div>
             </div>
 
@@ -281,7 +298,10 @@
                         <span> (50) </span>
                     </div>
                     <div class="price">2000frs<span>4000frs</span></div>
-                    <a href="#" class="btn">add to cart</a>
+                    <div class="bouton-add">
+                        <input type="number" min="1" value="1" id="quantity-1" class="bg-red-600 p-2  quantity-input">
+                        <button onclick="addToCart('delicieux Burger', 2000, 1)">Ajouter au panier</button>
+                    </div>
                 </div>
             </div>
 
@@ -301,7 +321,10 @@
                         <span> (50) </span>
                     </div>
                     <div class="price">2500frs <span>2500frs</span></div>
-                    <a href="#" class="btn">add to cart</a>
+                    <div class="bouton-add">
+                        <input type="number" min="1" value="1" id="quantity-1" class="bg-red-600 p-2  quantity-input">
+                        <button onclick="addToCart('delicieux Burger', 2000, 1)">Ajouter au panier</button>
+                    </div>
                 </div>
             </div>
 
@@ -321,7 +344,10 @@
                         <span> (50) </span>
                     </div>
                     <div class="price">4000frs <span>2500frs</span></div>
-                    <a href="#" class="btn">add to cart</a>
+                    <div class="bouton-add">
+                        <input type="number" min="1" value="1" id="quantity-1" class="bg-red-600 p-2  quantity-input">
+                        <button onclick="addToCart('delicieux Burger', 2000, 1)">Ajouter au panier</button>
+                    </div>
                 </div>
             </div>
 
@@ -341,7 +367,10 @@
                         <span> (50) </span>
                     </div>
                     <div class="price">4000frs <span>5000frs</span></div>
-                    <a href="#" class="btn">add to cart</a>
+                    <div class="bouton-add">
+                        <input type="number" min="1" value="1" id="quantity-1" class="bg-red-600 p-2  quantity-input">
+                        <button onclick="addToCart('delicieux Burger', 2000, 1)">Ajouter au panier</button>
+                    </div>
                 </div>
             </div>
 
@@ -579,6 +608,8 @@
 
     <!-- custom js file link  -->
     <script src="js/script.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 
